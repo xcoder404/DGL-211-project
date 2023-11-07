@@ -196,7 +196,103 @@ header {
   background: url(images/whblk.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  
 }
+
+.bg-image::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.7); 
+  position: absolute;
+  /* top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  height: 100vh;
+  width: 100%;
+  z-index: -1; 
+}
+
+.gal-content{
+  padding: 250px 50px 0;
+  z-index: 1;
+  color: black;
+}
+
+.nav li{
+  padding-bottom: 30px;
+}
+.nav a{
+  color:black;
+  font-weight: bold;
+  display: inline;
+  font-size: 1.3rem;
+  padding:0 0 5px 0;
+  
+}
+
+.nav a:hover{
+  border-bottom: 2px solid black;
+  color: black;
+  padding-bottom: 5px;
+}
+
+.nav a:visited{
+  border-bottom: 2px solid black;
+  color: black;
+  padding-bottom: 5px;
+}
+.active-link{
+  border-bottom: 2px solid black;
+  color: black;
+  padding-bottom: 5px;
+}
+
+
+
+.image-content{
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .items {
   font-size: 1.5rem;
   text-align: center;
