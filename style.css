@@ -264,15 +264,16 @@ header {
 
 
 
-.galleryWrap,.natureWrap {
+.galleryWrap,.natureWrap, .wildWrap {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  
   grid-gap: 0.5em;
   grid-auto-flow: row dense;
 }
 
 
-.galleryWrap img, .natureWrap img {
+.galleryWrap img, .natureWrap img, .wildWrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -327,6 +328,37 @@ header {
 }
 
 
+.wildWrap img:nth-child(1){
+  grid-column-end: span 2;
+}
+
+.wildWrap img:nth-child(2){
+  grid-column-end:span 1;
+  /* grid-row: 1 / span 1; */
+}
+.wildWrap img:nth-child(3){
+  grid-column-end: span 1;
+}
+
+.wildWrap img:nth-child(4){
+  grid-row-end: span 1;
+}
+.wildWrap img:nth-child(5){
+  grid-row-end: span 1;
+}
+
+
+.wildWrap img:nth-child(6){
+  grid-column-end: span 1;
+}
+
+.wildWrap img:nth-child(7){
+  grid-column-end: span 1;
+}
+.wildWrap img:nth-child(8){
+  grid-column-end: span 1;
+  
+}
 
 
 
