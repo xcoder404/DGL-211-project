@@ -266,7 +266,7 @@ header {
 
 .galleryWrap {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1em;
   grid-auto-flow: row dense;
 }
@@ -283,7 +283,7 @@ header {
 }
 
 .galleryWrap img[src$='_p.jpg'] {
-  grid-row-end: span 1;
+  grid-row-end: span 2;
 }
 
 
