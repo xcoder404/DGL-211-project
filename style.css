@@ -349,14 +349,14 @@ header {
 
 
 .wildWrap img:nth-child(6){
-  grid-column-end: span 1;
+  grid-column-end: span 2;
 }
 
 .wildWrap img:nth-child(7){
-  grid-column-end: span 1;
+  grid-column-end: span 2;
 }
 .wildWrap img:nth-child(8){
-  grid-column-end: span 1;
+  grid-column-end: span 2;
   
 }
 
