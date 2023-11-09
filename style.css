@@ -556,7 +556,7 @@ header {
       font-size: 1rem;
     }
 }
-@media screen and (max-width:425px){
+@media screen and (max-width:440px){
   .hero-content h1{
     font-size: 3rem;
   }
