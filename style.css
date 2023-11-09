@@ -17,7 +17,7 @@ header {
 }
 
 .navbar {
-  padding: 0 50px;
+  /* padding: 0 50px; */
   position: absolute;
 }
 .navbar-brand {
@@ -421,3 +421,153 @@ header {
   font-family: 'Reenie Beanie', cursive;
   font-size: 2.5rem;
 }
+
+/* responsive */
+@media screen and (max-width:1200px){
+  .image img{
+    width: 345px;
+  }
+  .simon-content p{
+    font-size: 0.9rem;
+  }
+  .socials{
+    font-size: 1.5rem;
+  }
+  .items{
+    font-size: 1rem;
+  }
+  .footer-links{
+    padding-left: 35px;
+  }
+  .footer-links a{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width:1000px){
+  .hero-content h1{
+    font-size: 4rem;
+  }
+  .hero-content span{
+    font-size: 1.2rem;
+  }
+  .simon-content h2{
+    font-size: 2rem;
+  }
+  .simon-content p{
+    font-size: 0.8rem;
+  }
+.image img{
+  width: 300px;
+}
+.info{
+  font-size: 0.8rem;
+}
+.navbar-toggler{
+  background-color: white;
+}
+.nav-item a{
+  text-align: center;
+}
+}
+@media screen and (max-width:768px){
+  .simon-padding{
+    padding: 0;
+  }
+  .simon-content p{
+    font-size: 0.8rem;
+  }
+  .footer-links a{
+    font-size: 0.8rem;
+  }
+  .info {
+    font-size: 0.6rem;
+  }
+  .socials{
+    font-size: 1rem;
+  }
+  .image{
+    margin-top: 80px;
+  }
+  .nature-content h3{
+    font-size: 3.5rem;
+  }
+  .wild-content h3{
+    font-size: 3.5rem;
+  }
+  .travel-content h3{
+    font-size: 3.5rem;
+  }
+ 
+
+}
+@media screen and (max-width:500px){
+  .image{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .image img{
+    width: 280px;
+    height: 100%;
+    border-radius: 100%;
+    }
+    .simon-content{
+      padding-left: 20px;
+    }
+    .simon-content h2{
+      margin-top: 20px;
+      text-align: center;
+    }
+    .simon-content span{
+      display: block;
+      text-align: center;
+    }
+    .group::before{
+      height: 150px;
+    }
+    .nature-content h3{
+      font-size: 2.5rem;
+    }
+    .wild-content h3{
+      font-size: 2.5rem;
+    }
+    .travel-content h3{
+      font-size: 2.5rem;
+    }
+    .items{
+      font-size: 1.5rem;
+    }
+    .socials{
+      font-size: 1.5rem;
+    }
+    .footer-links{
+      padding-left: 0;
+      flex-direction: column;
+    }
+    
+
+}
+@media screen and (max-width:425px){
+  .hero-content h1{
+    font-size: 3rem;
+  }
+  .hero-content span{
+    font-size: 0.8rem;
+    padding: 0 20px;
+  }
+  .navbar-toggler{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width:350px){
+  .hero-content h1{
+    font-size: 2rem;
+  }
+  .navbar-brand{
+    font-size: 1.8rem;
+  }
+ 
+  .group::before{
+    height: 100px;
+  }
+}
+
