@@ -543,8 +543,18 @@ header {
       padding-left: 0;
       flex-direction: column;
     }
+    .navbar-brand{
+      font-size: 2.5rem;
+    }
+   
+    .hero-content span{
+     
+      padding: 0 10px;
+    }
     
-
+    .navbar-toggler{
+      font-size: 1rem;
+    }
 }
 @media screen and (max-width:425px){
   .hero-content h1{
@@ -554,9 +564,7 @@ header {
     font-size: 0.8rem;
     padding: 0 10px;
   }
-  .navbar-toggler{
-    font-size: 1rem;
-  }
+
 }
 @media screen and (max-width:350px){
   .hero-content h1{
