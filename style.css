@@ -577,5 +577,8 @@ header {
   .group::before{
     height: 100px;
   }
+  .navbar-toggler{
+    font-size: 0.8rem;
+  }
 }
 
