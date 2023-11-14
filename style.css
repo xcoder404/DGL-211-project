@@ -574,7 +574,9 @@ header {
   grid-template-rows: repeat(8, 150px); /* 8 rows */
   grid-gap: 10px; 
     }
-    
+    .wildWrap{
+      grid-template-rows: repeat(6, 262px);
+    }
 .galleryWrap img:nth-child(1){
   grid-column-end: span 1;
 }
