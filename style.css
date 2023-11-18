@@ -1,6 +1,7 @@
 body {
   font-family: "Nanum Gothic", sans-serif;
   color: white;
+  scroll-behavior: smooth;
 }
 .bg-body-tertiary {
   background-color: transparent !important;
