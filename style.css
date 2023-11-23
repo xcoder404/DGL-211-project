@@ -452,14 +452,14 @@ a:active {
 }
 
 .wildWrap img:nth-child(6) {
-  grid-column-end: span 2;
+  grid-column-end: span 3;
 }
 
 .wildWrap img:nth-child(7) {
-  grid-column-end: span 2;
+  grid-column-end: span 3;
 }
 .wildWrap img:nth-child(8) {
-  grid-column-end: span 2;
+  grid-column-end: span 3;
 }
 
 .items {
@@ -486,6 +486,10 @@ a:active {
 .footer-links a {
   color: white;
   font-size: 1.2rem;
+  text-decoration: none ;
+}
+.footer-links a:hover{
+ border-bottom: 1px solid white;
 }
 
 .info {
@@ -498,7 +502,7 @@ a:active {
   font-size: 2.5rem;
 }
 
-.col-height{
+.hover-effect{
   height: 500px;
   padding:0 30px;
 }
@@ -513,8 +517,75 @@ a:active {
   height: 400px;
   padding:0 5px;
 }
+.wildWrap img{
+  object-fit: contain;
+}
+.travel img{
+  object-fit: cover !important;
+}
+.col-height{
+  position: relative;
+} 
+ /* .hover-effect::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  transform: translateX(13%); 
+  max-height: 100%;
+  height: 10%;
+  max-width: 100%;
+  width: 320px;
+  background: #ff652f;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  
+} */
+
+
+/* .hover-effect:hover::after {
+  bottom: 0;
+  opacity: 0.9;
+  padding: 0 auto;
+} */
+.hover-effect img{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  height: 500px;
+
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hover-effect:hover img {
+  opacity: 0.1;
+}
+.hover-effect:hover .middle {
+  opacity: 1;
+}
+.text h5{
+  font-weight: bold;
+  font-size: 2rem;
+
+}
+
+#wildlife img, #travel img{
+  object-fit: cover;
+}
 
 /* responsive */
+
 @media screen and (max-width: 1200px) {
   .image img {
     width: 345px;
@@ -539,6 +610,20 @@ a:active {
   .wildWrap {
     grid-template-columns: repeat(auto-fit, minmax(173px, 2fr));
   }
+  .wildWrap img:nth-child(6) {
+    grid-column-end: span 2;
+  }
+  
+  .wildWrap img:nth-child(7) {
+    grid-column-end: span 2;
+  }
+  .wildWrap img:nth-child(8) {
+    grid-column-end: span 2;
+  }
+  .hover-effect {
+    height: 341px;
+    padding: 0 5px;
+}
 }
 @media screen and (max-width: 1000px) {
   .hero-content h1 {
@@ -604,12 +689,21 @@ a:active {
   .orcas-content h3 {
     font-size: 3.5rem;
   }
+  .hover-effect{
+    height: 250px;
+    padding:0;
+  }
+
+  .col-wild{
+    padding: 0 30px;
+  }
 }
 @media screen and (max-width: 500px) {
   .image {
     text-align: center;
     margin-top: 10px;
   }
+  .
   .image img {
     width: 280px;
     height: 100%;
@@ -651,6 +745,16 @@ a:active {
     padding-left: 0;
     flex-direction: column;
   }
+  .flex-column{
+    flex-direction: row !important;
+    
+    justify-content: center;
+    
+
+  }
+  .nav-item{
+    padding-right: 10px;
+  }
   .navbar-brand {
     font-size: 2.5rem;
   }
@@ -670,7 +774,7 @@ a:active {
   .wildWrap {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* 1 column */
-    grid-template-rows: repeat(8, 150px); /* 8 rows */
+    grid-template-rows: repeat(6, 150px); /* 8 rows */
     grid-gap: 10px;
   }
   
@@ -712,6 +816,10 @@ a:active {
   .gal-title h1 {
     padding: 0 60px;
   }
+  .hover-effect{
+    height: unset;
+    padding-top: 20px;
+  }
 }
 @media screen and (max-width: 440px) {
   .hero-content h1 {
@@ -728,6 +836,13 @@ a:active {
     padding: 0 30px;
     font-size: 1.8rem;
   }
+
+  .col-wild1{
+    height: 260px;
+  }
+  /* .gal-content{
+    padding: 200px 20px 70px;
+  } */
 }
 @media screen and (max-width: 350px) {
   .hero-content h1 {
