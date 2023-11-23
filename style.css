@@ -163,9 +163,14 @@ img{
   background-size: calc(100%) 300%;
   background-position: center center;
 }
+.orcas::before {
+  background-image: url(images/ocr4_w.jpg);
+  background-size: calc(100%) 300%;
+  background-position: center center;
+}
 .nature-content,
 .wild-content,
-.travel-content {
+.travel-content,.orcas-content {
   position: absolute;
   color: white;
 }
@@ -205,7 +210,7 @@ img{
 
 .bg-image::before, .print-image::before{
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   position: absolute;
   /* top: 0;
   right: 0;
@@ -250,6 +255,9 @@ img{
   border-radius: 0;
   width: 300px;
 }
+.card-title, .span-display, .card-body span{
+  font-weight: bold;
+}
 
 .card .btn{
   background-color: black;
@@ -282,6 +290,7 @@ img{
 
 .work .card-title{
   font-size: 2.5rem;
+  
 }
 
 .work span{
@@ -592,6 +601,9 @@ a:active {
   .travel-content h3 {
     font-size: 3.5rem;
   }
+  .orcas-content h3 {
+    font-size: 3.5rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .image {
@@ -626,6 +638,9 @@ a:active {
   .travel-content h3 {
     font-size: 2.5rem;
   }
+  .orcas-content h3 {
+    font-size: 2.5rem;
+  }
   .items {
     font-size: 1.5rem;
   }
@@ -658,9 +673,7 @@ a:active {
     grid-template-rows: repeat(8, 150px); /* 8 rows */
     grid-gap: 10px;
   }
-  .wildWrap {
-    grid-template-rows: repeat(6, 262px);
-  }
+  
   .galleryWrap img:nth-child(1) {
     grid-column-end: span 1;
   }
