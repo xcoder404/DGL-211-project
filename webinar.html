@@ -48,7 +48,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="workshops.html">WORKSHOPS</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
             </ul>
           </div>
         </div>
@@ -87,8 +87,154 @@
                     3.5hrs</strong
                   >
                 </p>
-                <a href="#" class="btn btn-primary">SIGN UP</a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">SIGN UP</a>
               </div>
+              <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1
+                      class="modal-title fs-5 text-center"
+                      id="exampleModalLabel"
+                    >
+                      Secure your spot with Simon
+                    </h1>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-12">
+                        <form>
+                          <div class="mb-3">
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                              placeholder="Name"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputPassword1"
+                              placeholder="Email Address"
+                            />
+                          </div>
+
+                          <div class="mb-3">
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="exampleInputPassword1"
+                              placeholder="Phone (___)-___-____"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <select id="anabledSelect" class="form-select">
+                              <option>I would like to sign up for</option>
+                              <option class="mb-3">
+                                <p>Workshop $200</p>
+                              </option>
+                              <option class="mb-3">
+                                <p>Webinar $125</p>
+                              </option>
+                              <option class="mb-3">
+                                <p>Private Lessons $300</p>
+                              </option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <input type="datetime-local" id="Test_DatetimeLocal" class="form-control">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <div class="mb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                            placeholder="Name on card"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                            placeholder="Card number"
+                          />
+                        </div>
+                        <div class="row">
+                        <div class="mb-3 col-6">
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                            placeholder="exp. mm/yy"
+                          />
+                        </div>
+                        <div class="mb-3 col-6">
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                            placeholder="CVV"
+                          />
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputTextarea"
+                          placeholder="billing address"
+                        />
+                      </div>
+                      <div class="row">
+                        <div class="mb-3 col-6">
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="exampleInputText"
+                            placeholder="city"
+                          />
+                        </div>
+                        <div class="mb-3 col-6">
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                            placeholder="postal code"
+                          />
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary bg-light text-dark"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary  bg-light text-dark">
+                      Sign Up
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
           <div class="col-8">
