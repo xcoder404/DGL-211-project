@@ -16,6 +16,9 @@ header {
   overflow: hidden;
   border-bottom: 1px solid gray;
 }
+img{
+  object-fit: cover;
+}
 
 .navbar {
   /* padding: 0 50px; */
