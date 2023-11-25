@@ -522,10 +522,17 @@ a:active {
 }
 .travel img{
   object-fit: cover !important;
+  height: 400px;
+  width: 100%;
+}
+
+.row-dense{
+grid-auto-flow: column dense;
 }
 .col-height{
   position: relative;
 } 
+
  /* .hover-effect::after {
   content: "";
   position: absolute;
@@ -615,6 +622,12 @@ a:active {
 svg{
   fill: white;
 }
+
+.btn-small{
+  display: none;
+}
+
+
 /* responsive */
 
 @media screen and (max-width: 1200px) {
@@ -697,6 +710,7 @@ svg{
     width: 700px !important;
     right: 20%;
   }
+  
 }
 @media screen and (max-width: 768px) {
   .simon-padding {
@@ -737,6 +751,8 @@ svg{
   .col-wild{
     padding: 0 30px;
   }
+
+  
 }
 @media screen and (max-width: 500px) {
   .image {
@@ -864,6 +880,18 @@ svg{
     width: 100% !important; 
     right: unset;
   }
+
+  .btn-small{
+    display: block;
+  }
+  
+  .btn-large{
+    display: none;
+  }
+
+  .travel img:last-of-type{
+    grid-column: span 2;
+  }
 }
 @media screen and (max-width: 440px) {
   .hero-content h1 {
@@ -907,5 +935,8 @@ svg{
   }
   .nav-item a {
     font-size: 0.6rem;
+  }
+  .text-area{
+    height: 200px;
   }
 }
