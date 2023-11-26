@@ -752,7 +752,10 @@ svg{
   .col-wild{
     padding: 0 30px;
   }
-
+  .card{
+    height: unset;
+    max-height: unset;
+  }
   
 }
 @media screen and (max-width: 500px) {
